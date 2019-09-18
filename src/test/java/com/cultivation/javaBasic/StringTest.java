@@ -17,8 +17,10 @@ class StringTest {
         // TODO: Please modify the following line to pass the test.
         //
         // It is really easy to pass the test. But you have to tell why.
+            //the first test passed because originalString used replace() string function, it searched the word "original" and replaced the word "new" (originalString.replace("original", "new");) and then assigned to modifiedString\
+            //the second test passed because I assigned the optional variable: areSame to false, the actual is false because originalString is not equal to modifiedString because of the .replace
         // <--start
-        final Optional<Boolean> areSame = Optional.empty();
+        final Optional<Boolean> areSame = Optional.of(false);
         // --end-->
 
         assertEquals("The new string", modifiedString);
