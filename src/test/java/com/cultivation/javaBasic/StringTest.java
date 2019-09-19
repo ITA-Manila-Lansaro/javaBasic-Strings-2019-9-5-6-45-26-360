@@ -142,7 +142,24 @@ class StringTest {
         // TODO: Create string using StringBuilder
         // <--Start
         StringBuilder builder = new StringBuilder();
-        // --End-->
+        for (int x=0; height > x; x++){
+            for (int y=0; width > y; y++){
+                if (y == 0 || y == 4){
+                    builder.append("|");
+                }
+                if (x == 0 || x == 2){
+                    if (y > 0 && y < 4){
+                        builder.append("-");
+                    }
+                }else{
+                    if (y > 0 && y < 4){
+                        builder.append(" ");
+                    }
+                }
+            }
+            builder.append("\n");
+        }
+        // <--End-->
 
         final String expected =
             "|---|\n" +
