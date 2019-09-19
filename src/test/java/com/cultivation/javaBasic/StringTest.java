@@ -57,7 +57,7 @@ class StringTest {
         //
         // It is really easy to pass the test. But you have to tell why.
             //The first test passed because original String has been concatenated by "Part two" and it will result to the string "Part one. Part two" which is the same as the value in the expected
-            //The second test passed because orignalString is not equal to copyOfOriginalString because before after copying the originalString variable, the value was changed because "Part two." was concatenated.             
+            //The second test passed because orignalString is not equal to copyOfOriginalString because before after copying the originalString variable, the value was changed because "Part two." was concatenated.
         // <--start
         final Optional<Boolean> areSame = Optional.of(false);
         // --end-->
@@ -73,7 +73,7 @@ class StringTest {
 
         // TODO: Take part of the original string according to expectation.
         // <--start
-        final String partOfString = null;
+        final String partOfString = originalString.substring(5,13);
         // --end-->
 
         final String expectedString = "is great";
