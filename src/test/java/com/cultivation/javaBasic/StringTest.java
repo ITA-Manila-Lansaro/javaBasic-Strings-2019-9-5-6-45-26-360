@@ -100,8 +100,11 @@ class StringTest {
      * Questions on take string apart.
      *
      * - What if the input arguments is out of range of the string?
+     *  Answer: exception will be thrown StringIndexOutOfBoundsException: String index out of range
      * - What will happen if the the starting index is greater than the ending index?
+     *  Answer: exception will be thrown StringIndexOutOfBoundsException: String index out of range
      * - What will happen if the input string is of null reference?
+     *  Answer:   exception will be thrown NullPointerException
      */
 
     @SuppressWarnings({"unused", "ConstantConditions"})
