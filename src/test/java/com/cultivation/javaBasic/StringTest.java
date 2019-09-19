@@ -36,8 +36,10 @@ class StringTest {
         // TODO: Please modify the following line to pass the test.
         //
         // It is really easy to pass the test. But you have to tell why.
+            // The first test passed because original string used .trim() string function that should be equal to "The string with tailing space."
+            // The second test passed because I assigned the optional variable: areSame to false, the actual is false because originalString is not equal to modifiedString because of the .trim()
         // <--start
-        final Optional<Boolean> areSame = Optional.empty();
+        final Optional<Boolean> areSame = Optional.of(false);
         // --end-->
 
         assertEquals("The string with tailing space.", modifiedString);
